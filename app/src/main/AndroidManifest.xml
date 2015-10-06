@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.luis.breastawarenessapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Splash"
+            android:label="@string/title_activity_splash">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FactsActivity"
+            android:label="@string/title_activity_facts" >
+            <intent-filter>
+                <action android:name="com.example.luis.breastawarenessapp.FactsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SymptomsActivity"
+            android:label="@string/title_activity_symptoms" >
+        </activity>
+        <activity
+            android:name=".DiagnosisActivity"
+            android:label="@string/title_activity_diagnosis" >
+        </activity>
+        <activity
+            android:name=".PreventionActivity"
+            android:label="@string/title_activity_prevention" >
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".Facts1Acticity"
+            android:label="@string/title_activity_facts1_acticity" >
+        </activity>
+        <activity
+            android:name=".Facts2Activity"
+            android:label="@string/title_activity_facts2" >
+        </activity>
+
+    </application>
+
+</manifest>
