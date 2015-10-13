@@ -1,10 +1,200 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.luis.breastawarenessapp.SymptomsActivity"
-    android:id="@+id/symptoms">
+    android:background="@drawable/symptomsbg"
+    >
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:id="@+id/symptoms"
+        android:layout_marginTop="60dp"
+        android:layout_height="match_parent"
+        >
+
+
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1500dp"
+        android:columnCount="4"
+        android:rowCount="11"
+        android:layout_alignTop="@+id/symptoms"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageView2"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:src="@drawable/a"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageView3"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:src="@drawable/b"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageView4"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:src="@drawable/c"
+            android:layout_below="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3"
+             />
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageView5"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:src="@drawable/d"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageView6"
+            android:layout_column="1"
+            android:layout_row="6"
+            android:src="@drawable/e"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+             />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageView7"
+            android:layout_column="1"
+            android:layout_row="7"
+            android:src="@drawable/f"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageView8"
+            android:layout_column="1"
+            android:layout_row="8"
+            android:src="@drawable/g"
+            android:layout_below="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3"
+             />
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageView"
+            android:layout_column="1"
+            android:layout_row="9"
+            android:src="@drawable/h"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center|left" />
+
+
+
+
+
+        <TextView
+            android:layout_width="143dp"
+            android:layout_height="141dp"
+            android:layout_marginTop="20dp"
+            android:text="A change in the size or shape of one or both breasts."
+            android:id="@+id/textView"
+            android:layout_row="2"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="142dp"
+            android:layout_height="141dp"
+            android:text="Redness or rash on the skin and/or around the nipple."
+            android:id="@+id/textView8"
+            android:layout_marginTop="20dp"
+            android:layout_row="3"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="143dp"
+            android:layout_height="141dp"
+            android:text="Discharge (liquid) that comes from the nipple without squeezing."
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView2"
+
+            android:layout_row="4"
+            android:layout_column="2" />
+        <TextView
+            android:layout_width="143dp"
+            android:layout_height="141dp"
+            android:text="A swelling in your armpit or around your collarbone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView3"
+            android:layout_row="5"
+            android:layout_column="2" />
+        <TextView
+            android:layout_width="143dp"
+            android:layout_height="141dp"
+            android:text="A lump or thickening that feels different from the rest of the breast tissue."
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView4"
+            android:layout_row="6"
+            android:layout_column="2" />
+        <TextView
+            android:layout_width="143dp"
+            android:layout_height="141dp"
+            android:text="A change in skin texture such as puckering or dimpling (like orange skin)."
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView5"
+            android:layout_row="7"
+            android:layout_column="2" />
+        <TextView
+            android:layout_width="143dp"
+            android:layout_height="141dp"
+            android:text="Your nipple becoming inverted (pulled in) or changing its position or shape."
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView6"
+            android:layout_row="8"
+            android:layout_column="2" />
+        <TextView
+            android:layout_width="143dp"
+            android:layout_height="141dp"
+            android:text="Constant pain in your breast or armpit"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView7"
+            android:layout_row="9"
+            android:layout_column="2" />
+
+
+
+    </GridLayout>
+    </ScrollView>
 </RelativeLayout>

@@ -10,6 +10,10 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.VideoView;
+
+import org.w3c.dom.Text;
 
 public class Splash extends AppCompatActivity {
 
@@ -18,29 +22,58 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+
         final ImageView init = (ImageView) findViewById(R.id.imageView);
-        final Animation fadein = AnimationUtils.loadAnimation(getBaseContext(), R.anim.abc_fade_in);
+        final TextView n1 = (TextView) findViewById(R.id.textView14);
+        final TextView n2 = (TextView) findViewById(R.id.textView15);
+        final Animation slidein = AnimationUtils.loadAnimation(getBaseContext(), R.anim.abc_slide_in_top);
         final Animation fadeout = AnimationUtils.loadAnimation(getBaseContext(), R.anim.abc_fade_out);
         final Animation rotate = AnimationUtils.loadAnimation(getBaseContext(), R.anim.delay);
-        init.setAnimation(fadeout);
-        init.setAnimation(fadein);
-        init.setAnimation(rotate);
 
-        new Handler().postDelayed(new Runnable() {
-            public void run() {
-                startActivity(new Intent(Splash.this, MainActivity.class));
 
-                finish();
+
+        init.startAnimation(rotate);
+        n1.startAnimation(slidein);
+        n2.startAnimation(slidein);
+        rotate.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
             }
-        }
-                ,4500); //delay
 
+            @Override
+            public void onAnimationEnd(Animation animation) {
+            init.startAnimation(fadeout);
+                n1.startAnimation(fadeout);
+                n2.startAnimation(fadeout);
+                finish();
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
+            }
 
+            @Override
+            public void onAnimationRepeat(Animation animation) {
 
-
+            }
+        });
 
 
     }
+
+
+
+    //new Handler().postDelayed(new Runnable() {
+    //    public void run() {
+    //       startActivity(new Intent(Splash.this, MainActivity.class));
+
+    //      finish();
+    //}
+    //}
+    //      ,4000); //delay
+
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

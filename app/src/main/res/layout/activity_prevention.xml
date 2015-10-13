@@ -4,9 +4,84 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.luis.breastawarenessapp.PreventionActivity">
+    tools:context="com.example.luis.breastawarenessapp.PreventionActivity"
+    android:background="@drawable/preventionbg">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+
+        android:id="@+id/prevention"
+        android:layout_marginTop="70dp"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:showDividers="middle"
+            android:weightSum="1">
+    <TextView
+
+        android:text="1. Avoid becoming overweight. Obesity raises the risk of breast cancer after menopause, the time of life when breast cancer most often occurs. Avoid gaining weight over time, and try to maintain a body-mass index under 25."
+
+         android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="2. Eat healthy to avoid tipping the scale. Embrace a diet high in vegetables and fruit and low in sugared drinks, refined carbohydrates and fatty foods. Eat lean protein such as fish or chicken breast and eat red meat in moderation, if at all. Eat whole grains. Choose vegetable oils over animal fats."
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="3. Keep physically active. Research suggests that increased physical activity, even when begun later in life, reduces overall breast-cancer risk by about 10 percent to 30 percent. All it takes is moderate exercise like a 30-minute walk five days a week to get this protective effect."
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+
+
+    <TextView
+        android:text="4. Drink little or no alcohol. Alcohol use is associated with an increased risk of breast cancer. Women should limit intake to no more than one drink per day, regardless of the type of alcohol."
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+            <TextView
+                android:text="5. Don’t smoke. Research suggests that long-term smoking is associated with increased risk of breast cancer in some women."
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+
+            <TextView
+                android:text="6. If you bear children, breast-feed your babies for as long as possible. Women who breast-feed their babies for at least a year in total have a reduced risk of developing breast cancer later."
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+
+            <TextView
+                android:text="7. Avoid hormone replacement therapy. Menopausal hormone therapy increases risk for breast cancer. If you must take hormones to manage menopausal symptoms, avoid those that contain progesterone and limit their use to less than three years. “Bioidentical hormones” and hormonal creams and gels are no safer than prescription hormones and should also be avoided."
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+
+            <TextView
+                android:text="8. Get regular breast cancer screenings. Follow your doctor or health care provider’s recommendations to decide what type of screening you need and how often you need it."
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

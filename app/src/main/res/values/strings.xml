@@ -10,5 +10,7 @@
     <string name="title_activity_help">HelpActivity</string>
     <string name="title_activity_facts1_acticity">Facts1Acticity</string>
     <string name="title_activity_facts2">Facts2Activity</string>
-    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_splash">Breast Cancer Awareness</string>
+
+
 </resources>

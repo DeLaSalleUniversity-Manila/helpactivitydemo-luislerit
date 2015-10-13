@@ -4,9 +4,69 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.luis.breastawarenessapp.Facts2Activity">
+    tools:context="com.example.luis.breastawarenessapp.Facts2Activity"
+    android:background="@drawable/factsbg">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:id="@+id/prevention"
+        android:layout_marginTop="70dp"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:showDividers="middle"
+        android:weightSum="1">
 
-</RelativeLayout>
+    <TextView android:text="        Although the precise causes of breast cancer are unclear, we know the main risk factors. Still, most women considered at high risk for breast cancer do not get it, while many with no known risk factors do develop breast cancer. Among the most significant factors are advancing age and a family history of breast cancer. Risk increases for a woman who has certain types of benign breast lumps and increases significantly for a woman who has previously had cancer of the breast or the ovaries."
+
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:text="      A woman whose mother, sister, or daughter has had breast cancer is two to three times more likely to develop the disease, particularly if more than one first-degree relative has been affected. Researchers have identified two genes responsible for some instances of familial breast cancer. These genes are known as BRCA1 and BRCA2. About one woman in 200 carries the genes. Having one of them predisposes a woman to breast cancer but does not ensure that she will get it."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:text="      Generally, women over age 50 are more likely to get breast cancer than younger women, and African-American women are more likely than Caucasians to get breast cancer before menopause."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp" />
+
+        <TextView
+            android:text="      A link between breast cancer and hormones is clear. Researchers think that the greater a woman's exposure to the hormone estrogen, the more susceptible she is to breast cancer. Estrogen tells cells to divide; the more the cells divide, the more likely they are to be abnormal in some way, possibly becoming cancerous."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:text="      A woman's exposure to estrogen and progesterone rises and falls during her lifetime, influenced by the age she starts and stops menstruating, the average length of her menstrual cycle, and her age at first childbirth. A woman's risk for breast cancer is increased if she starts menstruating before age 12, has her first child after age 30, stops menstruating after age 55, or has a menstrual cycle shorter or longer than the average 26-29 days. Current information indicates that the hormones in birth control pills probably do not significantly increase the risk. Some studies suggest that taking hormone replacement therapy after menopause may increase risk, especially when taken for more than five years. The jury is still somewhat out on this matter, though. Heavy doses of radiation therapy may also be a factor, but low-dose mammograms pose almost no risk."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            />
+        <TextView
+            android:text=" The link between diet and breast cancer is debated. Obesity is a noteworthy risk factor, and drinking alcohol regularly -- particularly more than one drink a day -- may promote the disease. Many studies have shown that women whose diets are high in fat are more likely to get the disease. Researchers suspect that if a woman lowers her daily calories from fat -- to less than 20%-30% -- her diet may help protect her from developing breast cancer."
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+
+            />
+
+
+    </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>

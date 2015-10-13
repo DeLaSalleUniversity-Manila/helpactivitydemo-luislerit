@@ -4,9 +4,72 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.luis.breastawarenessapp.Facts1Acticity">
+    tools:context="com.example.luis.breastawarenessapp.Facts1Acticity"
+    android:background="@drawable/factsbg">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:id="@+id/prevention"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:showDividers="middle"
+        android:weightSum="1">
 
+
+    <TextView android:text="        Before discussing breast cancer, it's important to be familiar with the anatomy of the breast. The normal breast consists of milk-producing glands that are connected to the surface of the skin at the nipple by narrow ducts. The glands and ducts are supported by connective tissue made up of fat and fibrous material. Blood vessels, nerves, and lymphatic channels to the lymph nodes make up most of the rest of the breast tissue. This breast anatomy sits under the skin and on top of the chest muscles."
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="      As in all forms of cancer, the abnormal tissue that makes up breast cancer is the patient's own cells that have multiplied uncontrollably. Those cells may also travel to locations in the body where they are not normally found. When that happens, the cancer is called metastatic."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:text="      Breast cancer develops in the breast tissue, primarily in the milk ducts (ductal carcinoma) or glands (lobular carcinoma). The cancer is still called and treated as breast cancer even if it is first discovered after the cells have travelled to other areas of the body. In those cases, the cancer is referred to as metastatic or advanced breast cancer."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        />
+
+        <TextView
+            android:text="      Breast cancer usually begins with the formation of a small, confined tumor (lump), or as calcium deposits (microcalcifications) and then spreads through channels within the breast to the lymph nodes or through the blood stream to other organs. The tumor may grow and invade tissue around the breast, such as the skin or chest wall. Different types of breast cancer grow and spread at different rates -- some take years to spread beyond the breast while others grow and spread quickly.
+Some lumps are benign (not cancerous), however these can be premalignant. The only safe way to distinguish between a benign lump and cancer is to have the tissue examined by a doctor through a biopsy.
+Men can get breast cancer, too, but they account for just one percent of all breast cancer cases. Among women, breast cancer is the most common cancer and the second leading cause of cancer deaths after lung cancer.
+If eight women were to live to be at least 85, one of them would be expected to develop the disease at some point during her life. Two-thirds of women with breast cancer are over 50, and most of the rest are between 39 and 49."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            />
+
+
+        <TextView
+            android:text="Fortunately, breast cancer is very treatable if detected early. Localized tumors can usually be treated successfully before the cancer spreads; and in nine out of 10 cases, the woman will live at least another five years. However, late recurrences of breast cancer are common."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            />
+
+
+        <TextView
+            android:text="Once the cancer begins to spread, treatment becomes difficult, although treatment can often control the disease for years. Improved screening procedures and treatment options mean that at least seven out of 10 women with breast cancer will survive more than five years after initial diagnosis and half will survive more than 10 years."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            />
+
+    </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
