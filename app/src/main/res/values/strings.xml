@@ -11,6 +11,11 @@
     <string name="title_activity_facts1_acticity">Facts1Acticity</string>
     <string name="title_activity_facts2">Facts2Activity</string>
     <string name="title_activity_splash">Breast Cancer Awareness</string>
+    <string name="credits">In cooperation with:\nDe La Salle Universitys\nCHED Philippie Higher Education Research Network-\n(PHERNet) Sustainability Studies Program\nIntelligent Systems Laboratory\nDe La Salle University</string>
 
+    <string-array name="infotext">
+        <item>"1. Avoid becoming overweight. Obesity raises the risk of breast cancer after menopause, the time of life when breast cancer most often occurs. Avoid gaining weight over time, and try to maintain a body-mass index under 25."</item>
+        <item>"2. Eat healthy to avoid tipping the scale. Embrace a diet high in vegetables and fruit and low in sugared drinks, refined carbohydrates and fatty foods. Eat lean protein such as fish or chicken breast and eat red meat in moderation, if at all. Eat whole grains. Choose vegetable oils over animal fats."</item>
+    </string-array>
 
 </resources>

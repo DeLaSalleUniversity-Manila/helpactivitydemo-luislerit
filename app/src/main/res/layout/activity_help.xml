@@ -117,7 +117,12 @@
                 />
 
             <TextView
-                android:text="Sources: 1. www.nationalbreastcancer.org  2. www.fredhutch.org   3. www.webmd.com "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/credits"/>
+            <TextView
+android:layout_marginTop="5dp"      android:text="Sources: 1. www.nationalbreastcancer.org  2. www.fredhutch.org   3. www.webmd.com "
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 

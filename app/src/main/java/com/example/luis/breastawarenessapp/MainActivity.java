@@ -1,22 +1,33 @@
 package com.example.luis.breastawarenessapp;
 
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.support.v4.view.PagerAdapter;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.content.Intent;
 import java.lang.InterruptedException;
 import java.util.logging.Handler;
+import android.speech.tts.TextToSpeech;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
+    private ViewPager viewPager;
+    private PagerAdapter myPagerAdapter;
+    private TextToSpeech tts = null;
+    private String[] infotext;
+    private int currentSlide;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         onPause();
+
+
+
 
         TextView facts = (TextView) findViewById(R.id.textView2);
         TextView symptoms = (TextView) findViewById(R.id.textView3);
@@ -61,8 +72,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        infotext = getResources().getStringArray(R.array.infotext);
 
         }
+
+
 
 
     @Override
@@ -70,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+
     }
 
     @Override
